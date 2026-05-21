@@ -1,10 +1,11 @@
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        SyncSpace Frontend Connected
-      </h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   )
 }
 
